@@ -18,7 +18,7 @@ def decode(number):
   for digit in number:
     temp = int(digit) - 3
     if temp < 0:
-      decoded_num += str(10 - temp)
+      decoded_num += str(10 + temp)
     else:
       decoded_num += str(temp)
   return decoded_num
